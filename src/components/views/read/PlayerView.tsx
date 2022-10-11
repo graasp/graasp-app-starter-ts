@@ -1,6 +1,7 @@
 import { RecordOf } from 'immutable';
 
 import React, { FC, useContext, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import { Context, LocalContext } from '@graasp/apps-query-client';
 
@@ -40,6 +41,9 @@ const SmallPre = styled('pre')(({ theme }) => ({
 }));
 
 const PlayerView: FC = () => {
+  // use translations for the text
+  const { t } = useTranslation();
+
   // context describes the item context, i.e. has the item id, current member id (memberId),
   // the language and current view (builder, player, ...), the current permission (admin, write, read)
   const context: RecordOf<LocalContext> = useContext(Context);
@@ -85,7 +89,7 @@ const PlayerView: FC = () => {
               })
             }
           >
-            New App Data
+            {t('New App Data')}
           </Button>
           <SmallPre data-cy={APP_DATA_CONTAINER_CY}>
             {JSON.stringify(appDataArray, undefined, 2)}
@@ -108,7 +112,7 @@ const PlayerView: FC = () => {
               data-cy={UPDATE_APP_SETTING_BUTTON_CY}
               onClick={() => handleAppSetting(settingName, settingValue)}
             >
-              Update Setting
+              {t('Update Setting')}
             </Button>
           </Stack>
           <SmallPre data-cy={APP_SETTING_CONTAINER_CY}>
@@ -127,19 +131,19 @@ const PlayerView: FC = () => {
           spacing={2}
         >
           <div>
-            <Typography variant="h6">Local Context</Typography>
+            <Typography variant="h6">{t('Local Context')}</Typography>
             <SmallPre>{JSON.stringify(context.toJS(), undefined, 2)}</SmallPre>
           </div>
           <Divider />
           <div>
-            <Typography variant="h6">App Context</Typography>
+            <Typography variant="h6">{t('App Context')}</Typography>
             <SmallPre>
               {JSON.stringify(appContext?.toJS(), undefined, 2)}
             </SmallPre>
           </div>
           <Divider />
           <div>
-            <Typography variant="h6">Members</Typography>
+            <Typography variant="h6">{t('Members')}</Typography>
             <SmallPre>{JSON.stringify(members, undefined, 2)}</SmallPre>
           </div>
         </Stack>

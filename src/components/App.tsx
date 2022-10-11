@@ -2,9 +2,10 @@ import { RecordOf } from 'immutable';
 
 import React, { FC, ReactElement, useContext, useEffect } from 'react';
 
-import { Context, LocalContext } from '@graasp/apps-query-client';
+import { Context as HOCContext, LocalContext } from '@graasp/apps-query-client';
+import { Context } from '@graasp/sdk';
 
-import { CONTEXTS, DEFAULT_CONTEXT_LANGUAGE } from '../config/appSettings';
+import { DEFAULT_CONTEXT_LANGUAGE } from '../config/appSettings';
 import i18n from '../config/i18n';
 import { AppDataProvider } from './context/AppDataContext';
 import { AppSettingProvider } from './context/AppSettingContext';
@@ -12,7 +13,7 @@ import { MembersProvider } from './context/MembersContext';
 import PlayerView from './views/read/PlayerView';
 
 const App: FC = () => {
-  const context: RecordOf<LocalContext> = useContext(Context);
+  const context: RecordOf<LocalContext> = useContext(HOCContext);
 
   useEffect(() => {
     // handle a change of language
@@ -24,15 +25,15 @@ const App: FC = () => {
 
   const renderContent = (): ReactElement => {
     switch (context.get('context')) {
-      case CONTEXTS.BUILDER:
+      case Context.BUILDER:
       // todo: add the view to show in the builder
 
       // eslint-disable-next-line no-fallthrough
-      case CONTEXTS.ANALYZER:
+      case Context.ANALYTICS:
       // todo: add the view to show in the analyzer
 
       // eslint-disable-next-line no-fallthrough
-      case CONTEXTS.PLAYER:
+      case Context.PLAYER:
       // todo: add the view to show in the player
 
       // eslint-disable-next-line no-fallthrough
