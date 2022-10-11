@@ -1,5 +1,5 @@
 {
-  "short_name": "#TEMPLATE_SHORT_NAME#",
+  "short_name": "#TEMPLATE_FULL_NAME#",
   "name": "#TEMPLATE_FULL_NAME#",
   "icons": [
     {
