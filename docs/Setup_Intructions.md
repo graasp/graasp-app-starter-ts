@@ -94,7 +94,7 @@ And select these values:
 
 > How would you like to define a style for your project? **Use a popular style guide**
 
-> Which style guide do you want to follow? **Airbnb: https://github.com/airbnb/javascript**
+> Which style guide do you want to follow? **Airbnb: <https://github.com/airbnb/javascript>**
 
 > What format do you want your config file to be in? **JSON**
 
@@ -225,22 +225,22 @@ Add to `.eslintrc.json`:
 
 ```
 {
-	...
-	"extends": [
-		...
-		"prettier"
-	],
-	...
-	"plugins": [
-		...
-		"prettier"
-	],
-	...
-	"rules": [
-		...
-		"prettier/prettier": "error",
-	]
-	...
+ ...
+ "extends": [
+  ...
+  "prettier"
+ ],
+ ...
+ "plugins": [
+  ...
+  "prettier"
+ ],
+ ...
+ "rules": [
+  ...
+  "prettier/prettier": "error",
+ ]
+ ...
 }
 ```
 
@@ -285,8 +285,8 @@ To have the git hooks automatically installed after install add the following sc
 
 ```
 "scripts": {
-	...
-	"postinstall": "husky install",
+ ...
+ "postinstall": "husky install",
 }
 ```
 
