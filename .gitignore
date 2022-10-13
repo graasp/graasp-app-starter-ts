@@ -17,6 +17,7 @@
 
 # env files
 .env.*
+!.env_templates/*
 
 npm-debug.log*
 yarn-debug.log*
