@@ -15,7 +15,7 @@ on:
 jobs:
   graasp-deploy-s3-apps-workflow:
     # todo: replace me
-    name: ${{ GRAASP_TEMPLATE_FULL_NAME }}
+    name: GRAASP_TEMPLATE_FULL_NAME
     uses: graasp/graasp-deploy/.github/workflows/cintegration-s3-apps.yml@a5e6f97c18c86d97e3e8f15b27e4d898746327cf
     with:
       build-folder: 'build'
