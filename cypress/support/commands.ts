@@ -1,5 +1,3 @@
-import '@testing-library/cypress/add-commands';
-
 import { MOCK_SERVER_API_HOST, MOCK_SERVER_ITEM } from '../fixtures/appData';
 import { CURRENT_MEMBER, MEMBERS } from '../fixtures/members';
 
@@ -31,13 +29,14 @@ import { CURRENT_MEMBER, MEMBERS } from '../fixtures/members';
 
 Cypress.Commands.add(
   'setUpApi',
-  ({ currentMember = CURRENT_MEMBER, database = {}, appContext } = {}) => {
+  ({ currentMember = CURRENT_MEMBER, database, appContext } = {}) => {
     // mock api and database
-    Cypress.on('window:before:load', (win) => {
+    Cypress.on('window:before:load', (win: Window) => {
       // eslint-disable-next-line no-param-reassign
       win.database = {
-        currentMember,
-        currentItemId: MOCK_SERVER_ITEM.id,
+        appData: [],
+        appActions: [],
+        appSettings: [],
         members: Object.values(MEMBERS),
         ...database,
       };

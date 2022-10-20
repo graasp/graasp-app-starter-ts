@@ -5,6 +5,7 @@ import { toast } from 'react-toastify';
 
 import { UNEXPECTED_ERROR_MESSAGE } from '../config/messages';
 
+/* istanbul ignore next */
 const showErrorToast = (payload: string | { message: string }): void => {
   let message = UNEXPECTED_ERROR_MESSAGE;
   if (isString(payload)) {

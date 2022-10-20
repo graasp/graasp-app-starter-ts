@@ -1,3 +1,4 @@
+/* istanbul ignore file */
 type SentryConfigType = {
   dsn: string;
   environment: string;

@@ -1,3 +1,4 @@
+/* istanbul ignore file */
 import { v4 } from 'uuid';
 
 import type { Database, LocalContext, Member } from '@graasp/apps-query-client';
