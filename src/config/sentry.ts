@@ -1,3 +1,6 @@
+// We ignore Sentry in tests/coverage because
+// it is a configuration file for our error handler.
+/* istanbul ignore file */
 type SentryConfigType = {
   dsn: string;
   environment: string;

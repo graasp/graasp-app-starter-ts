@@ -1,3 +1,8 @@
+// We ignore this file because it is used to mock data
+// when developing locally, another set of mocks is used
+// when testing with cypress (defined in /cypress/fixtures/).
+
+/* istanbul ignore file */
 import { v4 } from 'uuid';
 
 import type { Database, LocalContext, Member } from '@graasp/apps-query-client';
