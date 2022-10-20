@@ -110,8 +110,7 @@
     "exclude": [
       "src/**/*.d.ts",
       "src/config/sentry.ts",
-      "src/data/db.ts",
-      "src/utils/toast.ts"
+      "src/data/db.ts"
     ]
   },
   "packageManager": "yarn@3.2.3"
