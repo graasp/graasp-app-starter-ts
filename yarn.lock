@@ -5167,7 +5167,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axe-core@npm:^4.4.2, axe-core@npm:^4.4.3":
+"axe-core@npm:^4.4.3":
   version: 4.4.3
   resolution: "axe-core@npm:4.4.3"
   checksum: c3ea000d9ace3ba0bc747c8feafc24b0de62a0f7d93021d0f77b19c73fca15341843510f6170da563d51535d6cfb7a46c5fc0ea36170549dbb44b170208450a2
@@ -7896,30 +7896,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jsx-a11y@npm:6.6.0":
-  version: 6.6.0
-  resolution: "eslint-plugin-jsx-a11y@npm:6.6.0"
-  dependencies:
-    "@babel/runtime": ^7.18.3
-    aria-query: ^4.2.2
-    array-includes: ^3.1.5
-    ast-types-flow: ^0.0.7
-    axe-core: ^4.4.2
-    axobject-query: ^2.2.0
-    damerau-levenshtein: ^1.0.8
-    emoji-regex: ^9.2.2
-    has: ^1.0.3
-    jsx-ast-utils: ^3.3.1
-    language-tags: ^1.0.5
-    minimatch: ^3.1.2
-    semver: ^6.3.0
-  peerDependencies:
-    eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8
-  checksum: d9da9a3ec71137c12519289c63e71250d5d78d4b7729b84e7e12edf1aad993083f23303d9b62359591b2f8aababb1bbec032cd84f1425e759b11a055e3acd144
-  languageName: node
-  linkType: hard
-
-"eslint-plugin-jsx-a11y@npm:^6.5.1":
+"eslint-plugin-jsx-a11y@npm:6.6.1, eslint-plugin-jsx-a11y@npm:^6.5.1":
   version: 6.6.1
   resolution: "eslint-plugin-jsx-a11y@npm:6.6.1"
   dependencies:
@@ -7942,9 +7919,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-prettier@npm:4.1.0":
-  version: 4.1.0
-  resolution: "eslint-plugin-prettier@npm:4.1.0"
+"eslint-plugin-prettier@npm:4.2.1":
+  version: 4.2.1
+  resolution: "eslint-plugin-prettier@npm:4.2.1"
   dependencies:
     prettier-linter-helpers: ^1.0.0
   peerDependencies:
@@ -7953,7 +7930,7 @@ __metadata:
   peerDependenciesMeta:
     eslint-config-prettier:
       optional: true
-  checksum: 3f731b9988383851f1a42bd67a093461886fc56dc5d0ca4c72bdd0755dc0f843faedde843c1812710a75782a9711096aad22b6140fe7d6f996cc4a672c8b3643
+  checksum: b9e839d2334ad8ec7a5589c5cb0f219bded260839a857d7a486997f9870e95106aa59b8756ff3f37202085ebab658de382b0267cae44c3a7f0eb0bcc03a4f6d6
   languageName: node
   linkType: hard
 
@@ -9339,8 +9316,8 @@ __metadata:
     eslint-import-resolver-typescript: 3.1.1
     eslint-plugin-cypress: 2.12.1
     eslint-plugin-import: 2.26.0
-    eslint-plugin-jsx-a11y: 6.6.0
-    eslint-plugin-prettier: 4.1.0
+    eslint-plugin-jsx-a11y: 6.6.1
+    eslint-plugin-prettier: 4.2.1
     eslint-plugin-react: 7.31.9
     eslint-plugin-react-hooks: 4.6.0
     husky: 8.0.1
@@ -11295,7 +11272,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jsx-ast-utils@npm:^2.4.1 || ^3.0.0, jsx-ast-utils@npm:^3.3.1, jsx-ast-utils@npm:^3.3.2":
+"jsx-ast-utils@npm:^2.4.1 || ^3.0.0, jsx-ast-utils@npm:^3.3.2":
   version: 3.3.3
   resolution: "jsx-ast-utils@npm:3.3.3"
   dependencies:
