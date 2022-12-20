@@ -29,6 +29,6 @@ export const generateSentryConfig = (): SentryConfigType => {
     dsn: (!window.Cypress && process.env.REACT_APP_SENTRY_DSN) || '',
     environment: SENTRY_ENVIRONMENT,
     tracesSampleRate: SENTRY_TRACE_SAMPLE_RATE,
-    release: process.env.REACT_APP_VERSION || 'no version',
+    release: process.env.REACT_APP_VERSION || 'undefined',
   };
 };
